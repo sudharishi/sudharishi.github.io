@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: gold;
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid gold;
+}
+
+nav a {
+    margin: 0 15px;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 40px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #111;
+    padding: 20px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+form input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: black;
+    border: 1px solid gold;
+    color: gold;
+}
+
+button {
+    background: gold;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
