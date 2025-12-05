@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard - SR FASHION HUB</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="admin-script.js"></script>
+</head>
+
+<body>
+<header>
+    <h1>ADMIN DASHBOARD</h1>
+</header>
+
+<section class="admin-box">
+
+<h2>Add New Product</h2>
+
+<input id="pname" placeholder="Product Name">
+<input id="pprice" placeholder="Price">
+<input id="pimg" placeholder="Image URL">
+
+<select id="pcat">
+<option>Customized Mobile Pouches</option>
+<option>Smart Watches</option>
+<option>Customized Shirts / T-shirts</option>
+<option>Bluetooth Speakers</option>
+<option>Sunglasses</option>
+<option>Earphones / Earbuds / Headset</option>
+</select>
+
+<button onclick="addProduct()">Add Product</button>
+
+<h2>Current Products</h2>
+<div id="productList"></div>
+
+<h2>Export JSON</h2>
+<textarea id="jsonOutput" placeholder="Copy & paste this in products.json"></textarea>
+<button onclick="exportJSON()">Generate JSON</button>
+
+</section>
+
+</body>
+</html>
